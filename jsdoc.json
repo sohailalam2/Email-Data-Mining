@@ -1,0 +1,18 @@
+{
+    "source": {
+        "includePattern": "src/**/*.js",
+        "excludePattern": "src/**/*.spec.js"
+    },
+    "plugins": ["node_modules/jsdoc-strip-async-await"],
+    "opts": {
+        "template": "node_modules/docdash",
+        "encoding": "utf8",
+        "destination": "public/jsdoc",
+        "recurse": true,
+        "verbose": true
+    },
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": false
+    }
+}

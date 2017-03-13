@@ -1,0 +1,51 @@
+{
+  "name": "email_data_mining",
+  "version": "1.0.0",
+  "description": "Awesome project for Email Data Mining",
+  "main": "index.js",
+  "author": "Sohail Alam <sohail.alam.1990@gmail.com>",
+  "engines": {
+    "node": ">=7.7.0"
+  },
+  "scripts": {
+    "test": "gulp test",
+    "start": "cd src && node index.js"
+  },
+  "license": "MIT",
+  "repository": {},
+  "dependencies": {
+    "emailjs-imap-client": "^2.0.3",
+    "finalhandler": "^1.0.0",
+    "serve-static": "^1.12.1"
+  },
+  "devDependencies": {
+    "babel-register": "^6.23.0",
+    "docdash": "^0.4.0",
+    "gulp": "^3.9.1",
+    "gulp-ava": "^0.16.0",
+    "gulp-jsdoc3": "^1.0.1",
+    "jsdoc": "^3.4.3",
+    "jsdoc-strip-async-await": "^0.1.0",
+    "nyc": "^10.1.2",
+    "rewire": "^2.5.2"
+  },
+  "nyc": {
+    "reporter": [
+      "text",
+      "lcov"
+    ],
+    "include": [
+      "src/**/*.js"
+    ],
+    "exclude": [
+      "src/**/*.spec.js"
+    ],
+    "extension": [
+      ".es6"
+    ],
+    "report-dir": "./public/coverage",
+    "cache": true,
+    "all": true,
+    "check-coverage": true
+  }
+}

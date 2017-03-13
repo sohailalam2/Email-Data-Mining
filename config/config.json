@@ -1,0 +1,13 @@
+{
+  "imap": {
+    "host": "imap.gmail.com",
+    "port": 993,
+    "enableSSL": true,
+    "enableCompression": true
+  },
+  "sparql": {
+    "endpoint": "",
+    "username": "dba",
+    "password": "dba"
+  }
+}
